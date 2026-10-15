@@ -1,0 +1,103 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  z-index: 2;
+}
+
+.home-title {
+  font-size: 2em;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.home-subtitle,
+.home-text {
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.home-buttons.center {
+  justify-content: center;
+}
+
+.home-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: fit-content;
+  min-width: 250px;
+}
+
+.home-button:hover {
+  transform: translateY(-2px);
+}
+
+.home-button.primary {
+  background-color: #4e54c8;
+  color: white;
+}
+
+.home-button.notification {
+  background-color: #f39c12;
+  color: white;
+}
+
+.home-button.success {
+  background-color: #28a745;
+  color: white;
+}
+
+.cutlery-left,
+.cutlery-right {
+  position: absolute;
+  top: 50%;
+  width: 840px;
+  opacity: 0.15;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.cutlery-left {
+  left: -100px;
+}
+
+.cutlery-right {
+  right: -100px;
+}
+
+a {
+  text-decoration: none;
+}

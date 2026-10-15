@@ -1,0 +1,143 @@
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 60px 20px;
+}
+
+.admin-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 1000px;
+  overflow-x: auto;
+}
+
+.admin-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333333;
+  text-align: center;
+}
+
+.admin-table-wrapper {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.admin-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-table td {
+  color: #555;
+}
+
+.admin-table tr:hover {
+  background-color: #f9f9f9;
+}
+.admin-search {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.admin-search:focus {
+  border-color: #4e54c8;
+  box-shadow: 0 0 0 2px rgba(78, 84, 200, 0.2);
+}
+.admin-table th {
+  background-color: #f0f0f0;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.admin-table th:hover {
+  background-color: #e4e4e4;
+}
+.admin-search {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.pagination button:hover {
+  background-color: #ccc;
+}
+
+.pagination .active {
+  background-color: #4e54c8;
+  color: white;
+}
+.column-filter {
+  margin-top: 8px;
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.admin-table th,
+.admin-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: nowrap; /* Nr de tel pe un singur rand */
+}
+
+.admin-table th {
+  background-color: #f4f4f4;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-table td {
+  color: #555;
+}

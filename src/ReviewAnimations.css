@@ -1,0 +1,47 @@
+.review-list {
+  transition: all 0.3s ease-in-out;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  border-left: 4px solid #673ab7;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.review-card:hover {
+  background-color: #f3f0ff;
+  transition: background-color 0.3s;
+}
+
+.fade-group {
+  animation: fadeGroup 0.5s ease-in;
+}
+
+.sort-dropdown {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeGroup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,103 @@
+.admin-container {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.admin-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.admin-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.admin-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.admin-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+  transition: background 0.2s ease;
+}
+
+.admin-button:hover {
+  background-color: #4349b1;
+}
+
+.program-title {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.program-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.zi-label {
+  width: 80px;
+  font-weight: 500;
+}
+
+.ora-select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.Toastify__toast {
+  border-radius: 8px !important;
+  font-size: 14px;
+}
+
+.Toastify__toast--success {
+  background-color: #38a169 !important;
+}
+
+.Toastify__toast--error {
+  background-color: #e53e3e !important;
+}

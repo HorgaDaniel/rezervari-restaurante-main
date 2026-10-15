@@ -1,0 +1,266 @@
+.restaurant-container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 30px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  min-height: 100vh;
+  border-radius: 12px;
+  color: white;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.restaurant-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.restaurant-subtitle {
+  color: #ddd;
+  margin-top: 8px;
+}
+
+.restaurant-rating {
+  font-size: 1.5rem;
+  color: #ff9500;
+  font-weight: bold;
+}
+
+.image-wrapper {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.image-wrapper img {
+  height: 180px;
+  width: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.restaurant-description {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #eee;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.restaurant-address,
+.restaurant-phone {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.section-title {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.reserve-button,
+.toggle-reviews-button {
+  display: block;
+  padding: 12px 24px;
+  margin-bottom: 15px;
+  background: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toggle-reviews-button {
+  background: #555;
+  background-image: none;
+}
+
+.reserve-button:hover,
+.toggle-reviews-button:hover {
+  transform: scale(1.05);
+}
+
+.review-section {
+  margin-top: 30px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.review-section.open {
+  max-height: 2000px;
+  overflow-y: auto;
+}
+
+.review-title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.review-card {
+  background: #f1f1f1;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: fadeInReview 0.5s ease forwards;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.fade-in {
+  animation: fadeInReview 0.5s ease forwards;
+}
+
+@keyframes fadeInReview {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-image img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  object-fit: contain;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  vertical-align: middle;
+  padding: 2px;
+  color: white;
+}
+
+.copy-button:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 100px;
+  color: #555;
+}
+
+.review-controls-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.review-filters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.review-filters select,
+.rating-filters button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.rating-filters button {
+  background-color: #eee;
+  color: #333;
+  margin-right: 5px;
+}
+
+.rating-filters button:hover {
+  background-color: #ddd;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.pagination-controls button {
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.pagination-controls button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

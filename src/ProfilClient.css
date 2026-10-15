@@ -1,0 +1,148 @@
+.profile-background {
+  min-height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  position: relative;
+  padding: 40px;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.reservation-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+.reservation-card:hover {
+  transform: translateY(-4px);
+}
+
+.reservation-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.review-input {
+  width: 100%;
+  max-width: 100%;              
+  box-sizing: border-box;       
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.review-button {
+  background-color: #4e54c8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-button:hover {
+  background-color: #3b43a1;
+}
+
+.cutlery-left,
+.cutlery-right {
+  position: absolute;
+  top: 50%;
+  width: 800px;
+  opacity: 0.08;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.cutlery-left {
+  left: -100px;
+}
+
+.cutlery-right {
+  right: -100px;
+}
+
+.filter-dropdown {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+
+.recommendation-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.recommendation-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.recommendation-card {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 12px;
+  width: 180px;                  
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.recommendation-card:hover {
+  transform: scale(1.03);
+}
+
+.recommendation-image {
+  width: 100%;
+  height: 160px;               
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.recommendation-count {
+  font-size: 14px;
+  color: #555;
+}
+
+.review-confirm {
+  color: green;
+  margin-top: 15px;
+}
+
+.review-wait {
+  color: gray;
+  margin-top: 15px;
+}
+
+.filter-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}

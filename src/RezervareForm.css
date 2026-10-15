@@ -1,0 +1,170 @@
+.backgroundStyle {
+  min-height: 100vh;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 0.8s ease;
+}
+
+
+.containerStyle {
+  max-width: 550px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  animation: slideUp 0.6s ease;
+}
+
+
+.titleStyle {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #4e54c8;
+}
+
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.inputStyle,
+.inputStyle textarea,
+.inputStyle select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.inputStyle:focus,
+.inputStyle textarea:focus,
+.inputStyle select:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+
+.calendarCustom {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 20px;
+  background: #fefefe;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+
+.calendarCustom .rdp-day {
+  padding: 12px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+
+.calendarCustom .rdp-day:hover {
+  background-color: #6a11cb;
+  color: white;
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+
+.calendarCustom .rdp-day_selected {
+  background: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
+  color: white;
+  font-weight: bold;
+  transform: scale(1.2);
+  box-shadow: 0 0 12px rgba(106, 17, 203, 0.5);
+}
+
+
+.calendarCustom .rdp-day_today {
+  border: 2px solid #6a11cb;
+  color: #6a11cb;
+  font-weight: 700;
+}
+
+.calendarCustom .rdp-caption_label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.calendarCustom .rdp-nav_button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #6a11cb;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.calendarCustom .rdp-nav_button:hover {
+  transform: scale(1.2);
+}
+
+.buttonStyle {
+  margin-top: 20px;
+  padding: 12px;
+  background-image: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.buttonStyle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+}
+
+.successMessage {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.successMessage h2 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.successMessage p {
+  color: #555;
+  font-size: 18px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
